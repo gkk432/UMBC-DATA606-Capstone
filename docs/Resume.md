@@ -65,7 +65,7 @@ _University of Maryland, Baltimore County_
 
 ---
 
-### **Extracurricular Activities**
+### **Experiences at UMBC**
 
 - **Peer Health Educator** – Organized workshops to promote mental health awareness on campus.
 - **Math Tutor** – Provided one-on-one tutoring for high school students in math and science subjects.
