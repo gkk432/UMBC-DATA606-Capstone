@@ -2,7 +2,7 @@
 
 ---
 
-![Gowtham's Headshot](Gowthamk.jpg)
+![Gowtham's Headshot](Gowtham.jpg)
 
 ---
 
