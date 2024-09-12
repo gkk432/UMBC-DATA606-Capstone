@@ -24,7 +24,7 @@
 ## 3. Data
 
 - **Data sources:**  
-  Amazon Fine Food Reviews dataset Kaggle.
+  Amazon Fine Food Reviews dataset from SNAP and Kaggle.
 
 - **Data size:**  
   Approximately 300 MB.
