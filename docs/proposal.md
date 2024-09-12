@@ -3,7 +3,7 @@
 - **Project Title:** Decoding Consumer Sentiment: Analyzing Amazon Fine Food Reviews with Machine Learning
 - Prepared for UMBC Data Science Master Degree Capstone by Dr Chaojie (Jay) Wang
 - Author Name: Gowtham Karaka
-- Link to the author's GitHub repo of the project: [Your GitHub Repo Link]
+- Link to the author's GitHub repo of the project: [https://github.com/gkk432/UMBC-DATA606-Capstone]
 - Link to the author's LinkedIn profile: [Your LinkedIn Profile Link]
 - Link to your PowerPoint presentation file: [Your PowerPoint Link]
 - Link to your YouTube video: [Your YouTube Video Link]
