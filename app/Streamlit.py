@@ -3,21 +3,26 @@ import joblib
 import gdown
 import os
 
-# Function to download the model file from Google Drive
+# Function to download files from Google Drive
 def download_file_from_google_drive(file_id, output_file):
     url = f"https://drive.google.com/uc?id={file_id}"
     gdown.download(url, output_file, quiet=False)
 
-# Google Drive file ID for the Logistic Regression model
-model_file_id = "1SPWyi5617p3SSQ7Zfo3XPpJGiv_DbWLU"
+# Google Drive file IDs
+model_file_id = "1SPWyi5617p3SSQ7Zfo3XPpJGiv_DbWLU"  # Logistic Regression Model
+vectorizer_file_id = "1xeAhXTkLyIXP0rhZjTaHeeHJeCFSiXf9"  # TF-IDF Vectorizer
 
-# Check if the model file is already downloaded
+# Check and download the model
 if not os.path.exists("logistic_regression_model.pkl"):
     download_file_from_google_drive(model_file_id, "logistic_regression_model.pkl")
 
+# Check and download the vectorizer
+if not os.path.exists("tfidf_vectorizer.pkl"):
+    download_file_from_google_drive(vectorizer_file_id, "tfidf_vectorizer.pkl")
+
 # Load the model and vectorizer
 model = joblib.load("logistic_regression_model.pkl")
-tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")  # Vectorizer is stored locally
+tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Streamlit app UI
 st.title("Sentiment Analysis App")
