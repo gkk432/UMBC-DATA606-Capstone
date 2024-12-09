@@ -15,5 +15,9 @@ tf-idf Vectorizer Pickle:
 
 https://drive.google.com/file/d/1xeAhXTkLyIXP0rhZjTaHeeHJeCFSiXf9/view?usp=sharing
 
+App:
+
+https://umbc-data606-capstone-pccvrpjnfhwqh2stgbgrwu.streamlit.app/
+
 
 
