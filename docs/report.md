@@ -134,6 +134,47 @@
     - **Confusion Matrix:** To visualize true positives, true negatives, false positives, and false negatives.  
   - Performance across all models (with and without SMOTE) was analyzed to determine the best-performing approach for sentiment classification.
 
+### 1. Multinomial NB with TF-IDF Vectorizer
+- **Accuracy:** 87.66%
+- **Observations:**
+  - Negative Reviews: Precision is high (90%), but recall is extremely low (25%), indicating that many negative reviews are misclassified.
+  - Positive Reviews: High recall (99%) shows the model is very good at identifying positive reviews, but it heavily favors positive sentiment at the cost of negative reviews.
+  - Macro Avg (F1-Score): 66% indicates poor balance between classes.
+- **Conclusion:** This model is biased toward positive reviews and struggles to capture negative sentiment effectively.
+
+### 2. Multinomial NB with TF-IDF Vectorizer and SMOTE
+- **Accuracy:** 86.70%
+- **Observations:**
+  - Negative Reviews: Recall significantly improves to 85%, but precision drops to 55%, meaning many false positives for negative reviews.
+  - Positive Reviews: Precision is very high (97%), but recall drops slightly (87%).
+  - Macro Avg (F1-Score): 79%, showing better balance between classes than the previous model.
+- **Conclusion:** The use of SMOTE helps balance the model for negative reviews but reduces precision, leading to overgeneralization of negatives.
+
+### 3. Logistic Regression with TF-IDF Vectorizer
+- **Accuracy:** 92.51%
+- **Observations:**
+  - Negative Reviews: Precision (83%) and recall (66%) show decent performance for negative reviews.
+  - Positive Reviews: Excellent precision (94%) and recall (98%), making it highly effective for positive reviews.
+  - Macro Avg (F1-Score): 85%, showing a strong balance between classes.
+- **Conclusion:** This model performs well for both positive and negative reviews with high accuracy and good balance.
+
+### 4. Logistic Regression with TF-IDF Vectorizer and SMOTE
+- **Accuracy:** 89.35%
+- **Observations:**
+  - Negative Reviews: Recall improves significantly to 87%, but precision drops to 62%.
+  - Positive Reviews: Precision is high (97%), but recall decreases slightly to 90%.
+  - Macro Avg (F1-Score): 83%, showing decent balance but slightly worse performance than the Logistic Regression model without SMOTE.
+- **Conclusion:** While SMOTE improves recall for negative reviews, it sacrifices precision, making the overall performance slightly worse.
+
+### 5. Random Forest with TF-IDF Vectorizer
+- **Accuracy:** 89.52%
+- **Observations:**
+  - Negative Reviews: High precision (89%) but very low recall (39%), indicating many negative reviews are missed.
+  - Positive Reviews: Excellent precision (90%) and recall (99%), favoring positive sentiment.
+  - Macro Avg (F1-Score): 74%, showing poor balance compared to Logistic Regression.
+- **Conclusion:** This model heavily favors positive reviews and performs poorly in identifying negative reviews.
+
+
 - **Logistic Regression with TF-IDF Vectorizer (Without SMOTE)**
 
 - **Highest Accuracy:**  
@@ -214,6 +255,20 @@
 - **Multilingual Sentiment Analysis:** Expand the model to handle reviews in multiple languages using advanced NLP techniques (e.g., translation APIs or multilingual embeddings).  
 - **Context-Aware Models:** Explore transformer-based models like **BERT** or **GPT** to better understand context, sarcasm, and nuanced language.  
 - **Incorporate Metadata:** Include additional features like product categories, user demographics, or review helpfulness ratings to enhance predictions.  
-- **Dynamic Web App:** Improve the app to handle batch uploads of reviews for bulk sentiment analysis and provide detailed visualizations for users.  
+- **Dynamic Web App:** Improve the app to handle batch uploads of reviews for bulk sentiment analysis and provide detailed visualizations for users.
+
+## 9. References
+
+1. **Text Preprocessing Techniques for Performing Sentiment Analysis**  
+   [https://www.analyticsvidhya.com/blog/2021/08/text-preprocessing-techniques-for-performing-sentiment-analysis/](https://www.analyticsvidhya.com/blog/2021/08/text-preprocessing-techniques-for-performing-sentiment-analysis/)  
+   *This article discusses various text preprocessing techniques essential for cleaning and preparing data for sentiment analysis.*
+
+2. **Text Preprocessing in NLP**  
+   [https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/](https://www.geeksforgeeks.org/text-preprocessing-for-nlp-tasks/)  
+   *This resource provides insights into text preprocessing steps crucial for natural language processing tasks.*
+
+
+
+
 
 
