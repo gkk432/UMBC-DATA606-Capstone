@@ -25,8 +25,8 @@ model = joblib.load("logistic_regression_model.pkl")
 tfidf_vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Streamlit app UI
-st.title("Sentiment Analysis App")
-st.subheader("Logistic Regression with TF-IDF")
+st.title("Sentiment Analysis APP")
+st.subheader("I can classify your review")
 
 # Input from user
 user_input = st.text_area("Enter a review:")
