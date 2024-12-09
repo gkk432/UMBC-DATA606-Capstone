@@ -72,7 +72,7 @@
     - Distribution of helpfulness metrics (`HelpfulnessNumerator` and `HelpfulnessDenominator`) to evaluate the reliability of review feedback.
 
 - **Visualizations:**  
-  - Created various visualizations using Plotly Express and Matplotlib:
+  - Created various visualizations:
     - Bar plots showing the number of reviews per year to understand temporal trends.
     - Word clouds to identify frequent terms in positive and negative reviews.
     - Box plots for review lengths categorized by sentiment to assess variability.
