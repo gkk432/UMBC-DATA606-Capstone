@@ -132,7 +132,31 @@
     - **Recall:** The ability of the model to identify all actual positive reviews (sensitivity).  
     - **F1-Score:** A balance between precision and recall for better evaluation of imbalanced classes.  
     - **Confusion Matrix:** To visualize true positives, true negatives, false positives, and false negatives.  
-  - Performance across all models (with and without SMOTE) was analyzed to determine the best-performing approach for sentiment classification.  
+  - Performance across all models (with and without SMOTE) was analyzed to determine the best-performing approach for sentiment classification.
+
+- **Logistic Regression with TF-IDF Vectorizer (Without SMOTE)**
+
+- **Highest Accuracy:**  
+  Logistic Regression achieves the highest accuracy of **92.51%**, outperforming all other models in correctly classifying reviews.
+
+- **Balanced Performance:**  
+  The model strikes a strong balance between **precision** and **recall** for both positive and negative reviews, as shown by a **macro average F1-score of 85%**.
+
+- **Negative Reviews:**  
+  Precision is **83%**, and recall is **66%**, which are better balanced than the other models.
+
+- **Positive Reviews:**  
+  Excellent precision (**94%**) and recall (**98%**) ensure that positive reviews are identified with high confidence.
+
+- **No Overgeneralization Issues:**  
+  Unlike models with SMOTE, this Logistic Regression model does not sacrifice precision for recall. It avoids overgeneralizing the minority class (negative reviews) and maintains high specificity in its predictions.
+
+- **Efficiency:**  
+  Logistic Regression is computationally efficient compared to ensemble models like Random Forest, making it suitable for large datasets like the Amazon Fine Food Reviews.
+
+- **Robustness to Imbalance:**  
+  Despite class imbalance in the dataset, the model handles it effectively without requiring oversampling techniques like SMOTE, which can sometimes introduce noise or overfit the data.
+
 
 ## 6. Web Application for Sentiment Analysis
 
